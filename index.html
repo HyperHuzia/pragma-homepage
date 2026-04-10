@@ -64,6 +64,10 @@
                             <span class="lang-pl">Proces</span>
                             <span class="lang-en">Process</span>
                         </a>
+                        <a href="#artykuly" class="text-corporate-500 hover:text-corporate-900 font-medium transition-colors">
+                            <span class="lang-pl">Artykuły</span>
+                            <span class="lang-en">Articles</span>
+                        </a>
                         <a href="#kontakt" class="bg-corporate-900 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-corporate-700 transition-all shadow-md hover:shadow-lg">
                             <span class="lang-pl">Zamów bezpłatny audyt</span>
                             <span class="lang-en">Get a free audit</span>
@@ -413,6 +417,99 @@
                     <span class="lang-en">Thank you for your trust. Check your inbox in a few minutes – we've sent a confirmation. We'll contact you very shortly to ask about technical details.</span>
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="artykuly" class="py-24 bg-corporate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-corporate-900 mb-4">
+                    <span class="lang-pl">Artykuły</span>
+                    <span class="lang-en">Articles</span>
+                </h2>
+                <p class="text-lg text-corporate-500 max-w-2xl mx-auto">
+                    <span class="lang-pl">Piszemy o AI w biznesie bez marketingowego bełkotu. Konkrety, analizy, praktyczne wnioski.</span>
+                    <span class="lang-en">We write about AI in business without marketing fluff. Facts, analysis, practical takeaways.</span>
+                </p>
+            </div>
+
+            <!-- Article 1 -->
+            <article class="bg-white rounded-2xl shadow-md p-8 sm:p-10 mb-8">
+                <div class="flex items-center gap-3 text-sm text-corporate-500 mb-4">
+                    <time datetime="2026-04-10">10 kwietnia 2026</time>
+                    <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
+                    <span>Pragma.AI</span>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-bold text-corporate-900 mb-6 leading-tight">
+                    <span class="lang-pl">Dlaczego niezależność od dostawców LLM to nie fanaberia</span>
+                    <span class="lang-en">Why independence from LLM providers is not a whim</span>
+                </h3>
+                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-pl">
+                    <p>Znacie ten moment, kiedy dostawca usługi zmienia regulamin i nagle okazuje się, że to co działało wczoraj, jutro może nie działać? W branży AI to nie jest scenariusz z filmów -- to się właśnie dzieje na naszych oczach.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Anthropic kontra Pentagon -- co się stało?</h4>
+                    <p>Dario Amodei, CEO Anthropic (firmy stojącej za Claude'em), postawił sprawę jasno: nie zgadza się na wykorzystanie swoich modeli do autonomicznej broni i masowej inwigilacji. Słuszne? Pewnie tak. Ale efekt był taki, że administracja USA oznaczyła Anthropic jako ryzyko w łańcuchu dostaw dla bezpieczeństwa narodowego.</p>
+                    <p>W tym samym czasie OpenAI podpisało umowy z Departamentem Obrony i weszło w tajne sieci Pentagonu.</p>
+                    <p>I teraz wyobraźcie sobie, że jesteście firmą logistyczną, rządową albo obronną, która postawiła cały swój stack AI na Claude'a. Z dnia na dzień wasze narzędzia mogą się okazać... politycznie niewygodne.</p>
+                    <p>To nie jest teoria. To się wydarzyło w marcu 2026.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Problem jest głębszy niż myślisz</h4>
+                    <p>Nate B. Jones, którego newsletter (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>) warto śledzić, trafnie to podsumowuje: lock-in w erze agentów AI jest znacznie gorszy niż to, co znamy z Microsoftu czy Salesforce'a.</p>
+                    <p>Dlaczego? Bo agent AI, który pracuje z twoją firmą miesiącami, buduje coś, co Jones nazywa "kontekstem behawioralnym" -- rozumie twoje procesy, pamięta ustalenia, zna specyfikę branży. Próba przeniesienia tego do innego dostawcy to nie jest kwestia zmiany klucza API. To jest jak strata doświadczonego pracownika, który nigdy niczego nie zapisywał.</p>
+
+                    <p class="font-semibold text-corporate-900 mt-6">Trzy rzeczy, które mogą pójść nie tak:</p>
+                    <p><strong>Dostawca zmienia reguły gry.</strong> Anthropic niedawno włączył domyślne wykorzystywanie rozmów do treningu -- trzeba było aktywnie się z tego wypisać. Kto nie czytał changelog'a, mógł nie zauważyć. Nagle twoje dane firmowe trenują cudzy model.</p>
+                    <p><strong>Dostawca ogranicza dostęp.</strong> Jones dokumentuje przypadki, w których Anthropic z krótkim wyprzedzeniem ograniczał pojemność dla partnerów. Wyobraź sobie, że twój agent obsługujący klientów nagle działa na 30% mocy, bo dostawca ma inne priorytety.</p>
+                    <p><strong>Dostawca uznaje twoją branżę za problematyczną.</strong> Nie musisz produkować broni. Wystarczy, że pracujesz w sektorze, który dostawca uzna za "niekompatybilny z konstytucją swojego modelu." Zapytajcie firmy z sektora obronnego, które korzystały z Claude'a.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Jak to wygląda w praktyce</h4>
+                    <p><strong>Pełna kontrola nad środowiskiem.</strong> Kiedy hostujesz model na swoich serwerach, nikt ci go nie wyłączy. Żadnych niespodzianek w piątek wieczorem.</p>
+                    <p><strong>Aktualizacje pod twoją kontrolą.</strong> Nowa wersja modelu może być lepsza, ale może też popsuć to, co działało. Przy self-hostingu decydujesz sam, kiedy przechodzisz na nową wersję.</p>
+                    <p><strong>Dane zostają u ciebie.</strong> GDPR, regulacje sektorowe, wewnętrzne polityki bezpieczeństwa -- wszystko łatwiejsze, kiedy dane nigdy nie opuszczają twojej infrastruktury.</p>
+                    <p><strong>Agent jest twój, nie platformy.</strong> Kontekst, pamięć, nauczony sposób pracy -- to nie jest "feature" dostawcy, który może zniknąć. To twoja własność.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Co z tego wynika?</h4>
+                    <p>Modele open source -- Llama, Mistral, Qwen i wiele innych -- są dziś na tyle dobre, że nie musisz rezygnować z jakości, żeby zyskać niezależność. Lokalne frameworki agentowe pozwalają budować pełnoprawnych agentów AI bez uzależniania się od jednego dostawcy.</p>
+                    <p>Nie chodzi o ideologię open source ani o oszczędności (choć te też są). Chodzi o to, żeby za pół roku nie okazało się, że twój najważniejszy cyfrowy pracownik jest zakładnikiem czyjegoś konfliktu z rządem.</p>
+                    <p>Warto sobie zadać jedno pytanie przy projektowaniu architektury: <strong>gdyby twój dostawca jutro zmienił regulamin -- co się stanie z twoim biznesem?</strong></p>
+                    <p>Jeśli odpowiedź brzmi "nie wiem" albo "będzie problem" -- to dobry moment, żeby porozmawiać o alternatywach.</p>
+
+                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Artykuł powstał na podstawie analiz Nate'a B. Jonesa (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>). Jeśli interesuje cię temat AI w biznesie bez marketingowego bełkotu -- polecamy.</p>
+                </div>
+                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-en">
+                    <p>You know that moment when a service provider changes their terms and suddenly what worked yesterday might not work tomorrow? In the AI industry, this isn't a movie scenario -- it's happening right before our eyes.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Anthropic vs the Pentagon -- what happened?</h4>
+                    <p>Dario Amodei, CEO of Anthropic (the company behind Claude), took a principled stance: no use of their models for autonomous weapons or mass surveillance. Fair enough. But the result was that the US administration flagged Anthropic as a national security supply chain risk.</p>
+                    <p>Meanwhile, OpenAI signed deals with the Department of Defense and entered the Pentagon's classified networks.</p>
+                    <p>Now imagine you're a logistics, government, or defense company that built your entire AI stack on Claude. Overnight, your tools could become... politically inconvenient.</p>
+                    <p>This isn't theory. It happened in March 2026.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The problem runs deeper than you think</h4>
+                    <p>Nate B. Jones, whose newsletter (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>) is worth following, puts it well: lock-in in the era of AI agents is far worse than what we know from Microsoft or Salesforce.</p>
+                    <p>Why? Because an AI agent that works with your company for months builds what Jones calls "behavioral context" -- it understands your processes, remembers decisions, knows industry specifics. Moving that to another provider isn't just an API key swap. It's like losing an experienced employee who never wrote anything down.</p>
+
+                    <p class="font-semibold text-corporate-900 mt-6">Three things that can go wrong:</p>
+                    <p><strong>The provider changes the rules.</strong> Anthropic recently enabled default use of conversations for training -- you had to actively opt out. Anyone who didn't read the changelog might not have noticed. Suddenly your company data is training someone else's model.</p>
+                    <p><strong>The provider restricts access.</strong> Jones documents cases where Anthropic limited capacity for partners with short notice. Imagine your customer-facing agent suddenly running at 30% because the provider has other priorities.</p>
+                    <p><strong>The provider flags your industry.</strong> You don't have to manufacture weapons. It's enough that you work in a sector the provider deems "incompatible with their model's constitution."</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What this means in practice</h4>
+                    <p><strong>Full control over your environment.</strong> When you host the model on your own servers, nobody can shut it down. No Friday evening surprises.</p>
+                    <p><strong>Updates under your control.</strong> A new model version might be better, but it might also break what was working. With self-hosting, you decide when to upgrade.</p>
+                    <p><strong>Your data stays with you.</strong> GDPR, sector regulations, internal security policies -- everything is easier when data never leaves your infrastructure.</p>
+                    <p><strong>The agent is yours, not the platform's.</strong> Context, memory, learned workflows -- that's not a provider "feature" that can disappear. It's your property.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The bottom line</h4>
+                    <p>Open source models -- Llama, Mistral, Qwen and many others -- are good enough today that you don't have to sacrifice quality to gain independence.</p>
+                    <p>It's not about open source ideology or saving money (though that helps too). It's about making sure that in six months, your most important digital worker isn't a hostage in someone else's conflict with a government.</p>
+                    <p>One question worth asking when designing your architecture: <strong>if your provider changed their terms tomorrow -- what would happen to your business?</strong></p>
+
+                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Article based on analysis by Nate B. Jones (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>).</p>
+                </div>
+            </article>
+
         </div>
     </section>
 
