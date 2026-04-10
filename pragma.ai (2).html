@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwiększ marżę dzięki Agentom AI | Bezpieczne wdrożenia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corporate: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            500: '#334e68',
+                            700: '#243b53',
+                            900: '#102a43',
+                        },
+                        accent: {
+                            500: '#005eeab3', // Professional blue
+                            600: '#005eea',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        
+        /* Style do przełączania wersji językowych */
+        html[lang="pl"] .lang-en { display: none !important; }
+        html[lang="en"] .lang-pl { display: none !important; }
+    </style>
+</head>
+<body class="bg-corporate-50 text-corporate-900 antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="cpu" class="h-8 w-8 text-accent-600"></i>
+                    <span class="font-bold text-xl tracking-tight text-corporate-900">Pragma<span class="text-accent-600">.AI</span></span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="#dlaczego-my" class="text-corporate-500 hover:text-corporate-900 font-medium transition-colors">
+                            <span class="lang-pl">Dla sceptyków</span>
+                            <span class="lang-en">For skeptics</span>
+                        </a>
+                        <a href="#proces" class="text-corporate-500 hover:text-corporate-900 font-medium transition-colors">
+                            <span class="lang-pl">Proces</span>
+                            <span class="lang-en">Process</span>
+                        </a>
+                        <a href="#kontakt" class="bg-corporate-900 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-corporate-700 transition-all shadow-md hover:shadow-lg">
+                            <span class="lang-pl">Zamów bezpłatny audyt</span>
+                            <span class="lang-en">Get a free audit</span>
+                        </a>
+                    </div>
+                    <!-- Language Switcher -->
+                    <button id="lang-toggle" class="flex items-center gap-1.5 text-corporate-700 hover:text-accent-600 font-semibold transition-colors px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 border border-transparent">
+                        <i data-lucide="globe" class="w-4 h-4"></i>
+                        <span id="lang-label" class="text-sm">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-accent-600 font-semibold text-sm mb-6">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-500 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-600"></span>
+                        </span>
+                        <span class="lang-pl">Wdrażamy sprawdzone rozwiązania</span>
+                        <span class="lang-en">We deploy proven solutions</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-corporate-900 leading-tight">
+                        <span class="lang-pl">Sztuczna inteligencja to nie magia. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-blue-800">To czysty zysk i optymalizacja.</span></span>
+                        <span class="lang-en">Artificial intelligence isn't magic. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-blue-800">It's pure profit and optimization.</span></span>
+                    </h1>
+                    <p class="text-lg text-corporate-500 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        <span class="lang-pl">Zastąp powtarzalne procesy w swojej firmie cyfrowymi asystentami. Bez technologicznego bełkotu, bez ryzyka utraty danych, z jasnym wskaźnikiem ROI widocznym już po 30 dniach.</span>
+                        <span class="lang-en">Replace repetitive processes in your company with digital assistants. No tech jargon, no data risks, with clear ROI visible in just 30 days.</span>
+                    </p>
+                    
+                    <!-- Smoke Test Form (Above the fold) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-md mx-auto lg:mx-0 transform hover:-translate-y-1 transition-transform duration-300">
+                        <h3 class="font-semibold text-lg mb-4">
+                            <span class="lang-pl">Sprawdź, ile firma traci na braku automatyzacji:</span>
+                            <span class="lang-en">See how much your company loses without automation:</span>
+                        </h3>
+                        <form id="hero-form" class="space-y-4">
+                            <div>
+                                <label for="email" class="sr-only">Adres email służbowy / Work email</label>
+                                <input type="email" id="email" required 
+                                    data-ph-pl="Twój służbowy adres email" data-ph-en="Your work email" placeholder="Twój służbowy adres email" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all outline-none">
+                            </div>
+                            <button type="submit" class="w-full bg-accent-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors shadow-md flex justify-center items-center gap-2 group">
+                                <span class="lang-pl">Zamów bezpłatny audyt potencjału</span>
+                                <span class="lang-en">Request a free potential audit</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                            <p class="text-xs text-gray-400 text-center mt-2 flex items-center justify-center gap-1">
+                                <i data-lucide="shield-check" class="w-3 h-3"></i> 
+                                <span class="lang-pl">100% poufności. Zero spamu.</span>
+                                <span class="lang-en">100% confidential. No spam.</span>
+                            </p>
+                        </form>
+                        <div id="hero-success" class="hidden text-center py-4 text-green-700 bg-green-50 rounded-lg">
+                            <i data-lucide="check-circle" class="w-8 h-8 mx-auto mb-2 text-green-600"></i>
+                            <p class="font-semibold"><span class="lang-pl">Dziękujemy!</span><span class="lang-en">Thank you!</span></p>
+                            <p class="text-sm">
+                                <span class="lang-pl">Nasz analityk skontaktuje się z Tobą w ciągu 24h.</span>
+                                <span class="lang-en">Our analyst will contact you within 24 hours.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic/Image -->
+                <div class="lg:col-span-6 mt-16 lg:mt-0 relative hidden md:block">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard analityczny" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-corporate-900/60 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="glass-panel rounded-xl p-4 flex items-center gap-4 text-corporate-900">
+                                <div class="bg-green-100 p-2 rounded-lg">
+                                    <i data-lucide="trending-down" class="text-green-600 h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-800">
+                                        <span class="lang-pl">Koszty operacyjne</span>
+                                        <span class="lang-en">Operational Costs</span>
+                                    </p>
+                                    <p class="text-2xl font-bold">-32%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Trust Line -->
+    <section class="border-y border-gray-200 bg-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold text-corporate-500 uppercase tracking-wider mb-6">
+                <span class="lang-pl">Budujemy rozwiązania opierające się na bezpiecznych standardach liderów:</span>
+                <span class="lang-en">We build solutions based on the secure standards of industry leaders:</span>
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="text-xl font-bold text-gray-700 flex items-center gap-2"><i data-lucide="cloud" class="h-6 w-6"></i> Microsoft Azure</span>
+                <span class="text-xl font-bold text-gray-700 flex items-center gap-2"><i data-lucide="server" class="h-6 w-6"></i> AWS Secure</span>
+                <span class="text-xl font-bold text-gray-700 flex items-center gap-2"><i data-lucide="lock" class="h-6 w-6"></i> OpenAI Enterprise</span>
+                <span class="text-xl font-bold text-gray-700 flex items-center gap-2"><i data-lucide="shield" class="h-6 w-6"></i> RODO Compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Addressing Skepticism Section -->
+    <section id="dlaczego-my" class="py-24 bg-corporate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-corporate-900 mb-4">
+                    <span class="lang-pl">Dlaczego właściciele firm boją się AI?</span>
+                    <span class="lang-en">Why are business owners afraid of AI?</span>
+                </h2>
+                <p class="text-lg text-corporate-500">
+                    <span class="lang-pl">Rozumiemy Twoje obawy. Większość agencji wdraża niesprawdzone zabawki. My tworzymy narzędzia, które po prostu zarabiają na siebie.</span>
+                    <span class="lang-en">We understand your concerns. Most agencies deploy untested toys. We build tools that simply pay for themselves.</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Objection 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="bg-red-50 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="database-zap" class="text-red-500 h-7 w-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-900 mb-3">
+                        <span class="lang-pl">"Moje dane wyciekną"</span>
+                        <span class="lang-en">"My data will leak"</span>
+                    </h3>
+                    <p class="text-corporate-500 text-sm leading-relaxed mb-4">
+                        <span class="lang-pl">Mit. Wdrażamy modele LLM w zamkniętych, prywatnych środowiskach chmurowych (lub on-premise). Twoje dane nigdy nie są używane do trenowania zewnętrznych modeli. Masz 100% własności intelektualnej.</span>
+                        <span class="lang-en">Myth. We deploy LLM models in closed, private cloud environments (or on-premise). Your data is never used to train external models. You retain 100% intellectual property.</span>
+                    </p>
+                </div>
+
+                <!-- Objection 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="bg-orange-50 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="wallet" class="text-orange-500 h-7 w-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-900 mb-3">
+                        <span class="lang-pl">"To worek bez dna"</span>
+                        <span class="lang-en">"It's a bottomless pit"</span>
+                    </h3>
+                    <p class="text-corporate-500 text-sm leading-relaxed mb-4">
+                        <span class="lang-pl">Koniec z projektami rozliczanymi za roboczogodziny bez końca. Wyceniamy wdrożenie agenta z góry, podajemy szacowany wskaźnik zwrotu z inwestycji (ROI) przed podpisaniem umowy.</span>
+                        <span class="lang-en">No more endless hourly-billed projects. We price the agent deployment upfront and provide an estimated ROI before signing the contract.</span>
+                    </p>
+                </div>
+
+                <!-- Objection 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="bg-blue-50 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="text-blue-500 h-7 w-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-900 mb-3">
+                        <span class="lang-pl">"Zespół tego nie przyjmie"</span>
+                        <span class="lang-en">"The team won't adopt it"</span>
+                    </h3>
+                    <p class="text-corporate-500 text-sm leading-relaxed mb-4">
+                        <span class="lang-pl">Nie wymieniamy Twojego oprogramowania. Tworzymy agentów pracujących w tle (integracje z systemami, które już znasz: Slack, Teams, maile, Twój ERP). AI ma służyć ludziom, nie ich frustrować.</span>
+                        <span class="lang-en">We don't replace your software. We create background agents (integrations with systems you already know: Slack, Teams, emails, your ERP). AI should serve people, not frustrate them.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pragmatic Process -->
+    <section id="proces" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-corporate-900 mb-6">
+                        <span class="lang-pl">Pragmatyczny proces. Zero ryzyka.</span>
+                        <span class="lang-en">Pragmatic process. Zero risk.</span>
+                    </h2>
+                    <p class="text-lg text-corporate-500 mb-8">
+                        <span class="lang-pl">Nie proponujemy rewolucji, która sparaliżuje Twoją firmę. Proponujemy ewolucję krok po kroku.</span>
+                        <span class="lang-en">We don't propose a revolution that will paralyze your company. We propose a step-by-step evolution.</span>
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-corporate-900 text-white flex items-center justify-center font-bold">1</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-corporate-900">
+                                    <span class="lang-pl">Bezpłatny Audyt Wąskich Gardeł</span>
+                                    <span class="lang-en">Free Bottleneck Audit</span>
+                                </h4>
+                                <p class="text-corporate-500 mt-2">
+                                    <span class="lang-pl">Analizujemy procesy. Wskazujemy JEDEN obszar, w którym Agent AI (np. do obsługi zapytań ofertowych) przyniesie najszybszy zwrot.</span>
+                                    <span class="lang-en">We analyze processes. We identify ONE area where an AI Agent (e.g., for handling sales inquiries) will bring the fastest return.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-corporate-900 text-white flex items-center justify-center font-bold">2</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-corporate-900">
+                                    <span class="lang-pl">Prototyp w 14 Dni (PoC)</span>
+                                    <span class="lang-en">Prototype in 14 Days (PoC)</span>
+                                </h4>
+                                <p class="text-corporate-500 mt-2">
+                                    <span class="lang-pl">Tworzymy działający wycinek systemu. Testujesz go Ty i Twoi menedżerowie. Inwestujesz ułamek kwoty wdrożenia końcowego.</span>
+                                    <span class="lang-en">We build a working segment of the system. You and your managers test it. You invest a fraction of the final deployment cost.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 rounded-full bg-accent-600 text-white flex items-center justify-center font-bold">3</div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-corporate-900">
+                                    <span class="lang-pl">Wdrożenie i Skalowanie</span>
+                                    <span class="lang-en">Deployment & Scaling</span>
+                                </h4>
+                                <p class="text-corporate-500 mt-2">
+                                    <span class="lang-pl">Gdy wiesz, że to działa – wdrażamy pełną wersję. Płacisz tylko za udokumentowany wynik biznesowy.</span>
+                                    <span class="lang-en">Once you know it works – we deploy the full version. You only pay for documented business results.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 bg-corporate-50 p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-200 opacity-50">
+                        <i data-lucide="bar-chart-3" class="w-64 h-64"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-corporate-900 mb-6">
+                            <span class="lang-pl">Przykłady zastosowań (Case Studies)</span>
+                            <span class="lang-en">Use Cases (Case Studies)</span>
+                        </h3>
+                        <ul class="space-y-6">
+                            <li class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex items-start gap-4">
+                                <div class="bg-green-100 p-2 rounded-lg mt-1"><i data-lucide="mail-open" class="text-green-600 w-5 h-5"></i></div>
+                                <div>
+                                    <strong class="block text-corporate-900">
+                                        <span class="lang-pl">Klasyfikacja setek e-maili dziennie</span>
+                                        <span class="lang-en">Classifying hundreds of emails daily</span>
+                                    </strong>
+                                    <span class="text-sm text-corporate-500">
+                                        <span class="lang-pl">Agent AI samodzielnie czyta zapytania B2B, kategoryzuje je, wyciąga kluczowe dane i wrzuca gotowe leady do systemu CRM. Oszczędność: 40h w tygodniu.</span>
+                                        <span class="lang-en">The AI Agent reads B2B inquiries independently, categorizes them, extracts key data, and pushes ready leads into the CRM system. Savings: 40h/week.</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex items-start gap-4">
+                                <div class="bg-blue-100 p-2 rounded-lg mt-1"><i data-lucide="file-search" class="text-blue-600 w-5 h-5"></i></div>
+                                <div>
+                                    <strong class="block text-corporate-900">
+                                        <span class="lang-pl">Asystent Prawny / Compliance</span>
+                                        <span class="lang-en">Legal / Compliance Assistant</span>
+                                    </strong>
+                                    <span class="text-sm text-corporate-500">
+                                        <span class="lang-pl">Agent przeczesujący wewnętrzną dokumentację. Zwraca konkretne paragrafy i podsumowania ryzyka w 5 sekund. Oszczędność na doradztwie: 25%.</span>
+                                        <span class="lang-en">An agent combing through internal documentation. Returns specific paragraphs and risk summaries in 5 seconds. External consulting savings: 25%.</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA (Smoke test execution) -->
+    <section id="kontakt" class="py-24 bg-corporate-900 text-white relative overflow-hidden">
+        <!-- Abstract background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full border-[20px] border-white"></div>
+            <div class="absolute top-1/2 right-10 w-64 h-64 rounded-full border-[10px] border-white"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                <span class="lang-pl">Gotowy na liczby, nie obietnice?</span>
+                <span class="lang-en">Ready for numbers, not promises?</span>
+            </h2>
+            <p class="text-xl text-corporate-100 mb-10 max-w-2xl mx-auto">
+                <span class="lang-pl">Wypełnij formularz. Przygotujemy bezpłatny, wstępny raport pokazujący, w którym dziale Twojej firmy AI zwróci się najszybciej. Decyzja należy do Ciebie.</span>
+                <span class="lang-en">Fill out the form. We'll prepare a free, preliminary report showing which department in your company will see the fastest ROI from AI. The decision is yours.</span>
+            </p>
+            
+            <form id="bottom-form" class="bg-white p-8 rounded-2xl shadow-2xl max-w-2xl mx-auto text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-corporate-700 mb-2">
+                            <span class="lang-pl">Imię i nazwisko</span>
+                            <span class="lang-en">Full Name</span>
+                        </label>
+                        <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-corporate-900 focus:ring-2 focus:ring-accent-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-corporate-700 mb-2">
+                            <span class="lang-pl">Służbowy Email</span>
+                            <span class="lang-en">Work Email</span>
+                        </label>
+                        <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-corporate-900 focus:ring-2 focus:ring-accent-500 outline-none">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-corporate-700 mb-2">
+                        <span class="lang-pl">Rozmiar firmy (opcjonalnie, pomaga w estymacji)</span>
+                        <span class="lang-en">Company size (optional, helps with estimation)</span>
+                    </label>
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg text-corporate-900 focus:ring-2 focus:ring-accent-500 outline-none bg-white">
+                        <option data-text-pl="Wybierz..." data-text-en="Select...">Wybierz...</option>
+                        <option data-text-pl="1-10 pracowników" data-text-en="1-10 employees">1-10 pracowników</option>
+                        <option data-text-pl="11-50 pracowników" data-text-en="11-50 employees">11-50 pracowników</option>
+                        <option data-text-pl="51-200 pracowników" data-text-en="51-200 employees">51-200 pracowników</option>
+                        <option data-text-pl="200+ pracowników" data-text-en="200+ employees">200+ pracowników</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-corporate-900 text-white font-bold py-4 px-6 rounded-lg hover:bg-corporate-700 transition-colors flex justify-center items-center gap-2">
+                    <span class="lang-pl">Poproś o analizę i wycenę</span>
+                    <span class="lang-en">Request analysis and quote</span>
+                    <i data-lucide="file-check" class="w-5 h-5"></i>
+                </button>
+            </form>
+            
+            <div id="bottom-success" class="hidden max-w-2xl mx-auto mt-8 p-6 bg-white rounded-2xl shadow-xl text-center">
+                <i data-lucide="check-circle" class="w-12 h-12 mx-auto mb-4 text-green-600"></i>
+                <h3 class="text-2xl font-bold text-corporate-900">
+                    <span class="lang-pl">Zrobione!</span>
+                    <span class="lang-en">Done!</span>
+                </h3>
+                <p class="text-corporate-500 mt-2">
+                    <span class="lang-pl">Dziękujemy za zaufanie. Sprawdź swoją skrzynkę mailową w ciągu kilku minut – wysłaliśmy potwierdzenie. Skontaktujemy się z Tobą bardzo krótko, aby dopytać o detale techniczne.</span>
+                    <span class="lang-en">Thank you for your trust. Check your inbox in a few minutes – we've sent a confirmation. We'll contact you very shortly to ask about technical details.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="h-6 w-6 text-gray-400"></i>
+                <span class="font-bold text-gray-600">Pragma.AI</span>
+            </div>
+            <p class="text-gray-500 text-sm text-center">
+                <span class="lang-pl">© 2026 Pragma.AI. Wszelkie prawa zastrzeżone.</span>
+                <span class="lang-en">© 2026 Pragma.AI. All rights reserved.</span>
+            </p>
+            <div class="flex gap-4">
+                <a href="#" class="text-gray-400 hover:text-gray-600">
+                    <span class="lang-pl">Polityka prywatności</span>
+                    <span class="lang-en">Privacy Policy</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+
+        // Logika przełączania języków
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const htmlTag = document.documentElement;
+        const titleTag = document.querySelector('title');
+        
+        const titles = {
+            pl: "Zwiększ marżę dzięki Agentom AI | Bezpieczne wdrożenia",
+            en: "Boost Margins with AI Agents | Secure Deployments"
+        };
+
+        langToggleBtn.addEventListener('click', () => {
+            const currentLang = htmlTag.getAttribute('lang');
+            const newLang = currentLang === 'pl' ? 'en' : 'pl';
+            
+            // Zmiana atrybutu lang (steruje CSS-em wyświetlającym klasy .lang-pl i .lang-en)
+            htmlTag.setAttribute('lang', newLang);
+            titleTag.textContent = titles[newLang];
+            
+            // Zmiana tekstu przycisku (zawsze pokazuje język, NA KTÓRY można zmienić)
+            document.getElementById('lang-label').textContent = newLang === 'pl' ? 'EN' : 'PL';
+
+            // Zmiana placeholderów w inputach
+            document.querySelectorAll('[data-ph-pl]').forEach(el => {
+                el.placeholder = el.getAttribute('data-ph-' + newLang);
+            });
+
+            // Zmiana opcji w tagach <select> (nie łapią klas CSS wewnątrz)
+            document.querySelectorAll('[data-text-pl]').forEach(el => {
+                el.textContent = el.getAttribute('data-text-' + newLang);
+            });
+        });
+
+        // Form handlers for Smoke Test simulation
+        const handleFormSubmit = (formId, successId) => {
+            document.getElementById(formId).addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log(`[SMOKE TEST] Konwersja / Conversion: ${formId}`);
+                
+                this.classList.add('hidden');
+                const successDiv = document.getElementById(successId);
+                successDiv.classList.remove('hidden');
+                successDiv.classList.add('animate-fade-in');
+            });
+        };
+
+        handleFormSubmit('hero-form', 'hero-success');
+        handleFormSubmit('bottom-form', 'bottom-success');
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
