@@ -510,6 +510,115 @@
                 </div>
             </article>
 
+            <!-- Article 2 -->
+            <article class="bg-white rounded-2xl shadow-md p-8 sm:p-10 mb-8">
+                <div class="flex items-center gap-3 text-sm text-corporate-500 mb-4">
+                    <time datetime="2026-04-11">11 kwietnia 2026</time>
+                    <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
+                    <span>Pragma.AI</span>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-bold text-corporate-900 mb-6 leading-tight">
+                    <span class="lang-pl">System plików to nowa baza danych dla agentów AI</span>
+                    <span class="lang-en">File system is the new database for AI agents</span>
+                </h3>
+                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-pl">
+                    <p>Wyobraź sobie, że twój asystent AI prowadzi za ciebie korespondencję z klientami przez kilka miesięcy. Pamięta szczegóły każdej rozmowy, zna preferencje stałych klientów, wie które projekty są na etapie "pilne" a które "na kiedyś". I nagle -- znikają wszystkie te dane. Nie dlatego, że ktoś usunął plik. Tylko dlatego, że są zamknięte w bazie danych do której nie masz dostępu.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Czarna skrzynka zamiast szuflady</h4>
+                    <p>Tradycyjne systemy AI trzymają "pamięć" agenta w bazach danych -- wektorowych, SQL-owych, NoSQL-owych. Dla użytkownika wygląda to tak: wpisujesz pytanie, dostajesz odpowiedź. Co się dzieje pośrodku? Nie wiesz. Nie widzisz. Nie kontrolujesz.</p>
+                    <p>To jakby zatrudnić pracownika, który prowadzi wszystkie notatki w prywatnym notesie, którego nie możesz przeczytać.</p>
+                    <p>A gdyby tak agent AI trzymał wszystko w zwykłych plikach?</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Filesystem jako baza danych -- o co chodzi?</h4>
+                    <p>Pomysł jest prosty: zamiast zapytać bazę danych "pokaż mi kontekst klienta X", agent otwiera folder <code>/klienci/X/</code> i czyta pliki tam zawarte. Zamiast zapisywać wynik analizy w tabeli SQL, zapisuje go jako <code>analiza-2026-04-11.md</code> w odpowiednim katalogu.</p>
+                    <p><strong>To jak zorganizowana szuflada w biurku.</strong></p>
+                    <p>Każdy rozumie system plików. Nawet osoby nietechniczne używają folderów na co dzień. Widzisz strukturę, widzisz zawartość, możesz wszystko sprawdzić, skopiować, przenieść.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Dlaczego to działa lepiej niż bazy danych</h4>
+                    <p><strong>1. Widzisz co się dzieje.</strong> Gdy agent zapisuje dane w plikach, możesz po prostu otworzyć folder i zobaczyć co "pamięta". Nie potrzebujesz specjalistycznych narzędzi ani dostępu administratora.</p>
+                    <p><strong>2. Debugowanie jest trywialne.</strong> Coś nie działa? Nie musisz grzebać w logach systemowych. Wchodzisz w folder agenta i widzisz co zrobił. Plik po pliku.</p>
+                    <p><strong>3. Wersjonowanie działa natychmiast.</strong> Chcesz wiedzieć co agent robił tydzień temu? Z systemem plików używasz gita. Każda modyfikacja jest zapisana. Możesz cofnąć się w czasie.</p>
+                    <p><strong>4. Dane są twoje.</strong> Pliki możesz skopiować, przenieść na inny komputer. Nie jesteś uzależniony od formatu bazy danych ani od dostawcy.</p>
+                    <p><strong>5. Agenty już znają system plików.</strong> Modele AI są trenowane na kodzie. Doskonale rozumieją komendy jak <code>ls</code>, <code>cat</code>, <code>grep</code>. Nie trzeba ich uczyć nowego języka zapytań.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Jak to wygląda w praktyce</h4>
+                    <p><strong>Przykład: Agent obsługujący zgłoszenia serwisowe</strong></p>
+                    <p>Tradycyjnie: agent zapisuje w bazie "klient X, problem Y, status Z". Widzisz tylko to, co aplikacja ci pokaże.</p>
+                    <p>W podejściu filesystem:</p>
+                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">/zgłoszenia/
+  /2026-04/
+    /klient-acme-sp-z-o-o/
+      01-wstepna-analiza.md
+      02-korespondencja-z-dostawcą.md
+      03-propozycja-rozwiązania.md
+      status.txt
+      priorytet.txt</pre>
+                    <p>Widzisz dokładnie co agent robił. Możesz przeczytać każdy dokument. Możesz zmienić status ręcznie jeśli trzeba.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Co z tego wynika?</h4>
+                    <p>Paradygmat "filesystem jako baza danych" to nie regres do przeszłości. To świadomy wybór korzyści:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Przejrzystość</strong> -- widzisz co agent robi</li>
+                        <li><strong>Kontrola</strong> -- możesz interweniować na każdym etapie</li>
+                        <li><strong>Przenośność</strong> -- dane są w standardowych formatach</li>
+                        <li><strong>Niezależność</strong> -- nie jesteś uzależniony od dostawcy</li>
+                        <li><strong>Prostota</strong> -- każdy rozumie pliki i foldery</li>
+                    </ul>
+                    <p class="mt-4">W Pragma budujemy naszych agentów właśnie w ten sposób. Nie dlatego, że to modne. Tylko dlatego, że działa. I żebyśmy -- i nasi klienci -- mogli w każdej chwili zajrzeć "pod maskę" i zobaczyć co się dzieje.</p>
+                    <p>Bo technologia powinna być przejrzysta. Zwłaszcza gdy zaczyna podejmować decyzje w naszym imieniu.</p>
+
+                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Artykuł powstał na podstawie prac Muratcana Koylana nad kontekstowymi systemami dla agentów AI.</p>
+                </div>
+                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-en">
+                    <p>Imagine your AI assistant handles client correspondence for months. It remembers every conversation detail, knows regular clients' preferences, understands which projects are "urgent" and which are "whenever". And suddenly -- all that data disappears. Not because someone deleted a file. Just because it's locked in a database you can't access.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Black box instead of a drawer</h4>
+                    <p>Traditional AI systems store agent "memory" in databases -- vector, SQL, NoSQL. From the user's perspective: you type a question, you get an answer. What happens in between? You don't know. You don't see. You don't control.</p>
+                    <p>It's like hiring an employee who keeps all notes in a private notebook you can't read.</p>
+                    <p>What if the AI agent kept everything in regular files instead?</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Filesystem as database -- what's the idea?</h4>
+                    <p>The idea is simple: instead of asking a database "show me client X's context", the agent opens folder <code>/clients/X/</code> and reads the files there. Instead of saving analysis results in a SQL table, it saves them as <code>analysis-2026-04-11.md</code> in the appropriate directory.</p>
+                    <p><strong>It's like an organized desk drawer.</strong></p>
+                    <p>Everyone understands file systems. Even non-technical people use folders daily. You see the structure, you see the content, you can check, copy, move everything.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Why this works better than databases</h4>
+                    <p><strong>1. You see what's happening.</strong> When the agent saves data in files, you can simply open the folder and see what it "remembers". No specialized tools or admin access needed.</p>
+                    <p><strong>2. Debugging is trivial.</strong> Something doesn't work? You don't need to dig through system logs. You enter the agent's folder and see what it did. File by file.</p>
+                    <p><strong>3. Versioning works immediately.</strong> Want to know what the agent did last week? With a file system you use git. Every modification is saved. You can go back in time.</p>
+                    <p><strong>4. The data is yours.</strong> You can copy files, move them to another computer. You're not dependent on database format or vendor.</p>
+                    <p><strong>5. Agents already know file systems.</strong> AI models are trained on code. They perfectly understand commands like <code>ls</code>, <code>cat</code>, <code>grep</code>. No need to teach them a new query language.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What this means in practice</h4>
+                    <p><strong>Example: Agent handling service tickets</strong></p>
+                    <p>Traditionally: agent saves to database "client X, problem Y, status Z". You only see what the app shows you.</p>
+                    <p>In the filesystem approach:</p>
+                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">/tickets/
+  /2026-04/
+    /client-acme-inc/
+      01-initial-analysis.md
+      02-vendor-correspondence.md
+      03-proposed-solution.md
+      status.txt
+      priority.txt</pre>
+                    <p>You see exactly what the agent did. You can read every document. You can manually change status if needed.</p>
+
+                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The bottom line</h4>
+                    <p>The "filesystem as database" paradigm isn't a regression to the past. It's a conscious choice of benefits:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Transparency</strong> -- you see what the agent does</li>
+                        <li><strong>Control</strong> -- you can intervene at any stage</li>
+                        <li><strong>Portability</strong> -- data is in standard formats</li>
+                        <li><strong>Independence</strong> -- you're not locked to a vendor</li>
+                        <li><strong>Simplicity</strong> -- everyone understands files and folders</li>
+                    </ul>
+                    <p class="mt-4">At Pragma, we build our agents this way. Not because it's trendy. Just because it works. And so that we -- and our clients -- can always peek "under the hood" and see what's happening.</p>
+                    <p>Because technology should be transparent. Especially when it starts making decisions on our behalf.</p>
+
+                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Article based on Muratcan Koylan's work on context systems for AI agents.</p>
+                </div>
+            </article>
+
         </div>
     </section>
 
