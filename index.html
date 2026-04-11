@@ -420,9 +420,9 @@
         </div>
     </section>
 
-    <!-- Articles Section -->
+    <!-- Articles Section (3 latest cards) -->
     <section id="artykuly" class="py-24 bg-corporate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold text-corporate-900 mb-4">
                     <span class="lang-pl">Artykuły</span>
@@ -434,312 +434,87 @@
                 </p>
             </div>
 
-            <!-- Article 1 -->
-            <article class="bg-white rounded-2xl shadow-md p-8 sm:p-10 mb-8">
-                <div class="flex items-center gap-3 text-sm text-corporate-500 mb-4">
-                    <time datetime="2026-04-10">10 kwietnia 2026</time>
-                    <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
-                    <span>Pragma.AI</span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-corporate-900 mb-6 leading-tight">
-                    <span class="lang-pl">Dlaczego niezależność od dostawców LLM to nie fanaberia</span>
-                    <span class="lang-en">Why independence from LLM providers is not a whim</span>
-                </h3>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-pl">
-                    <p>Znacie ten moment, kiedy dostawca usługi zmienia regulamin i nagle okazuje się, że to co działało wczoraj, jutro może nie działać? W branży AI to nie jest scenariusz z filmów -- to się właśnie dzieje na naszych oczach.</p>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Card 3 (newest) -->
+                <a href="articles.html#agent-ai-nie-potrzebuje-erp" class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-corporate-500 mb-3">
+                            <time datetime="2026-04-11">11.04.2026</time>
+                            <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
+                            <span>Pragma.AI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-corporate-900 mb-3 group-hover:text-accent-600 transition-colors leading-snug">
+                            <span class="lang-pl">Czemu Agent AI nie potrzebuje ERP</span>
+                            <span class="lang-en">Why AI Agent doesn't need an ERP</span>
+                        </h3>
+                        <p class="text-sm text-corporate-500 leading-relaxed line-clamp-3">
+                            <span class="lang-pl">Słyszę to regularnie: "Fajny ten wasz agent AI, ale my najpierw musimy wdrożyć porządny ERP." To jest pułapka. I prowadzi w ślepą uliczkę.</span>
+                            <span class="lang-en">I hear this regularly: "Your AI agent sounds nice, but first we need to implement a proper ERP." It's a trap. And it leads to a dead end.</span>
+                        </p>
+                        <div class="mt-4 flex items-center gap-1 text-sm font-medium text-accent-600 group-hover:gap-2 transition-all">
+                            <span class="lang-pl">Czytaj</span>
+                            <span class="lang-en">Read</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </a>
 
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Anthropic kontra Pentagon -- co się stało?</h4>
-                    <p>Dario Amodei, CEO Anthropic (firmy stojącej za Claude'em), postawił sprawę jasno: nie zgadza się na wykorzystanie swoich modeli do autonomicznej broni i masowej inwigilacji. Słuszne? Pewnie tak. Ale efekt był taki, że administracja USA oznaczyła Anthropic jako ryzyko w łańcuchu dostaw dla bezpieczeństwa narodowego.</p>
-                    <p>W tym samym czasie OpenAI podpisało umowy z Departamentem Obrony i weszło w tajne sieci Pentagonu.</p>
-                    <p>I teraz wyobraźcie sobie, że jesteście firmą logistyczną, rządową albo obronną, która postawiła cały swój stack AI na Claude'a. Z dnia na dzień wasze narzędzia mogą się okazać... politycznie niewygodne.</p>
-                    <p>To nie jest teoria. To się wydarzyło w marcu 2026.</p>
+                <!-- Card 2 -->
+                <a href="articles.html#system-plikow-baza-danych" class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-corporate-500 mb-3">
+                            <time datetime="2026-04-11">11.04.2026</time>
+                            <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
+                            <span>Pragma.AI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-corporate-900 mb-3 group-hover:text-accent-600 transition-colors leading-snug">
+                            <span class="lang-pl">System plików to nowa baza danych dla agentów AI</span>
+                            <span class="lang-en">File system is the new database for AI agents</span>
+                        </h3>
+                        <p class="text-sm text-corporate-500 leading-relaxed line-clamp-3">
+                            <span class="lang-pl">Wyobraź sobie, że twój asystent AI prowadzi korespondencję z klientami przez kilka miesięcy. I nagle -- znikają wszystkie dane. Bo są zamknięte w bazie danych.</span>
+                            <span class="lang-en">Imagine your AI assistant handles client correspondence for months. And suddenly -- all that data disappears. Because it's locked in a database.</span>
+                        </p>
+                        <div class="mt-4 flex items-center gap-1 text-sm font-medium text-accent-600 group-hover:gap-2 transition-all">
+                            <span class="lang-pl">Czytaj</span>
+                            <span class="lang-en">Read</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </a>
 
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Problem jest głębszy niż myślisz</h4>
-                    <p>Nate B. Jones, którego newsletter (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>) warto śledzić, trafnie to podsumowuje: lock-in w erze agentów AI jest znacznie gorszy niż to, co znamy z Microsoftu czy Salesforce'a.</p>
-                    <p>Dlaczego? Bo agent AI, który pracuje z twoją firmą miesiącami, buduje coś, co Jones nazywa "kontekstem behawioralnym" -- rozumie twoje procesy, pamięta ustalenia, zna specyfikę branży. Próba przeniesienia tego do innego dostawcy to nie jest kwestia zmiany klucza API. To jest jak strata doświadczonego pracownika, który nigdy niczego nie zapisywał.</p>
+                <!-- Card 1 (oldest) -->
+                <a href="articles.html#niezaleznosc-od-dostawcow-llm" class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-corporate-500 mb-3">
+                            <time datetime="2026-04-10">10.04.2026</time>
+                            <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
+                            <span>Pragma.AI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-corporate-900 mb-3 group-hover:text-accent-600 transition-colors leading-snug">
+                            <span class="lang-pl">Dlaczego niezależność od dostawców LLM to nie fanaberia</span>
+                            <span class="lang-en">Why independence from LLM providers is not a whim</span>
+                        </h3>
+                        <p class="text-sm text-corporate-500 leading-relaxed line-clamp-3">
+                            <span class="lang-pl">Znacie ten moment, kiedy dostawca usługi zmienia regulamin i nagle to co działało wczoraj, jutro może nie działać? W branży AI to się właśnie dzieje.</span>
+                            <span class="lang-en">You know that moment when a provider changes their terms and what worked yesterday might not work tomorrow? In AI, this is happening right now.</span>
+                        </p>
+                        <div class="mt-4 flex items-center gap-1 text-sm font-medium text-accent-600 group-hover:gap-2 transition-all">
+                            <span class="lang-pl">Czytaj</span>
+                            <span class="lang-en">Read</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-                    <p class="font-semibold text-corporate-900 mt-6">Trzy rzeczy, które mogą pójść nie tak:</p>
-                    <p><strong>Dostawca zmienia reguły gry.</strong> Anthropic niedawno włączył domyślne wykorzystywanie rozmów do treningu -- trzeba było aktywnie się z tego wypisać. Kto nie czytał changelog'a, mógł nie zauważyć. Nagle twoje dane firmowe trenują cudzy model.</p>
-                    <p><strong>Dostawca ogranicza dostęp.</strong> Jones dokumentuje przypadki, w których Anthropic z krótkim wyprzedzeniem ograniczał pojemność dla partnerów. Wyobraź sobie, że twój agent obsługujący klientów nagle działa na 30% mocy, bo dostawca ma inne priorytety.</p>
-                    <p><strong>Dostawca uznaje twoją branżę za problematyczną.</strong> Nie musisz produkować broni. Wystarczy, że pracujesz w sektorze, który dostawca uzna za "niekompatybilny z konstytucją swojego modelu." Zapytajcie firmy z sektora obronnego, które korzystały z Claude'a.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Jak to wygląda w praktyce</h4>
-                    <p><strong>Pełna kontrola nad środowiskiem.</strong> Kiedy hostujesz model na swoich serwerach, nikt ci go nie wyłączy. Żadnych niespodzianek w piątek wieczorem.</p>
-                    <p><strong>Aktualizacje pod twoją kontrolą.</strong> Nowa wersja modelu może być lepsza, ale może też popsuć to, co działało. Przy self-hostingu decydujesz sam, kiedy przechodzisz na nową wersję.</p>
-                    <p><strong>Dane zostają u ciebie.</strong> GDPR, regulacje sektorowe, wewnętrzne polityki bezpieczeństwa -- wszystko łatwiejsze, kiedy dane nigdy nie opuszczają twojej infrastruktury.</p>
-                    <p><strong>Agent jest twój, nie platformy.</strong> Kontekst, pamięć, nauczony sposób pracy -- to nie jest "feature" dostawcy, który może zniknąć. To twoja własność.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Co z tego wynika?</h4>
-                    <p>Modele open source -- Llama, Mistral, Qwen i wiele innych -- są dziś na tyle dobre, że nie musisz rezygnować z jakości, żeby zyskać niezależność. Lokalne frameworki agentowe pozwalają budować pełnoprawnych agentów AI bez uzależniania się od jednego dostawcy.</p>
-                    <p>Nie chodzi o ideologię open source ani o oszczędności (choć te też są). Chodzi o to, żeby za pół roku nie okazało się, że twój najważniejszy cyfrowy pracownik jest zakładnikiem czyjegoś konfliktu z rządem.</p>
-                    <p>Warto sobie zadać jedno pytanie przy projektowaniu architektury: <strong>gdyby twój dostawca jutro zmienił regulamin -- co się stanie z twoim biznesem?</strong></p>
-                    <p>Jeśli odpowiedź brzmi "nie wiem" albo "będzie problem" -- to dobry moment, żeby porozmawiać o alternatywach.</p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Artykuł powstał na podstawie analiz Nate'a B. Jonesa (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>). Jeśli interesuje cię temat AI w biznesie bez marketingowego bełkotu -- polecamy.</p>
-                </div>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-en">
-                    <p>You know that moment when a service provider changes their terms and suddenly what worked yesterday might not work tomorrow? In the AI industry, this isn't a movie scenario -- it's happening right before our eyes.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Anthropic vs the Pentagon -- what happened?</h4>
-                    <p>Dario Amodei, CEO of Anthropic (the company behind Claude), took a principled stance: no use of their models for autonomous weapons or mass surveillance. Fair enough. But the result was that the US administration flagged Anthropic as a national security supply chain risk.</p>
-                    <p>Meanwhile, OpenAI signed deals with the Department of Defense and entered the Pentagon's classified networks.</p>
-                    <p>Now imagine you're a logistics, government, or defense company that built your entire AI stack on Claude. Overnight, your tools could become... politically inconvenient.</p>
-                    <p>This isn't theory. It happened in March 2026.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The problem runs deeper than you think</h4>
-                    <p>Nate B. Jones, whose newsletter (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>) is worth following, puts it well: lock-in in the era of AI agents is far worse than what we know from Microsoft or Salesforce.</p>
-                    <p>Why? Because an AI agent that works with your company for months builds what Jones calls "behavioral context" -- it understands your processes, remembers decisions, knows industry specifics. Moving that to another provider isn't just an API key swap. It's like losing an experienced employee who never wrote anything down.</p>
-
-                    <p class="font-semibold text-corporate-900 mt-6">Three things that can go wrong:</p>
-                    <p><strong>The provider changes the rules.</strong> Anthropic recently enabled default use of conversations for training -- you had to actively opt out. Anyone who didn't read the changelog might not have noticed. Suddenly your company data is training someone else's model.</p>
-                    <p><strong>The provider restricts access.</strong> Jones documents cases where Anthropic limited capacity for partners with short notice. Imagine your customer-facing agent suddenly running at 30% because the provider has other priorities.</p>
-                    <p><strong>The provider flags your industry.</strong> You don't have to manufacture weapons. It's enough that you work in a sector the provider deems "incompatible with their model's constitution."</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What this means in practice</h4>
-                    <p><strong>Full control over your environment.</strong> When you host the model on your own servers, nobody can shut it down. No Friday evening surprises.</p>
-                    <p><strong>Updates under your control.</strong> A new model version might be better, but it might also break what was working. With self-hosting, you decide when to upgrade.</p>
-                    <p><strong>Your data stays with you.</strong> GDPR, sector regulations, internal security policies -- everything is easier when data never leaves your infrastructure.</p>
-                    <p><strong>The agent is yours, not the platform's.</strong> Context, memory, learned workflows -- that's not a provider "feature" that can disappear. It's your property.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The bottom line</h4>
-                    <p>Open source models -- Llama, Mistral, Qwen and many others -- are good enough today that you don't have to sacrifice quality to gain independence.</p>
-                    <p>It's not about open source ideology or saving money (though that helps too). It's about making sure that in six months, your most important digital worker isn't a hostage in someone else's conflict with a government.</p>
-                    <p>One question worth asking when designing your architecture: <strong>if your provider changed their terms tomorrow -- what would happen to your business?</strong></p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Article based on analysis by Nate B. Jones (<a href="https://natesnewsletter.substack.com" class="text-accent-600 hover:underline">natesnewsletter.substack.com</a>).</p>
-                </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="bg-white rounded-2xl shadow-md p-8 sm:p-10 mb-8">
-                <div class="flex items-center gap-3 text-sm text-corporate-500 mb-4">
-                    <time datetime="2026-04-11">11 kwietnia 2026</time>
-                    <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
-                    <span>Pragma.AI</span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-corporate-900 mb-6 leading-tight">
-                    <span class="lang-pl">System plików to nowa baza danych dla agentów AI</span>
-                    <span class="lang-en">File system is the new database for AI agents</span>
-                </h3>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-pl">
-                    <p>Wyobraź sobie, że twój asystent AI prowadzi za ciebie korespondencję z klientami przez kilka miesięcy. Pamięta szczegóły każdej rozmowy, zna preferencje stałych klientów, wie które projekty są na etapie "pilne" a które "na kiedyś". I nagle -- znikają wszystkie te dane. Nie dlatego, że ktoś usunął plik. Tylko dlatego, że są zamknięte w bazie danych do której nie masz dostępu.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Czarna skrzynka zamiast szuflady</h4>
-                    <p>Tradycyjne systemy AI trzymają "pamięć" agenta w bazach danych -- wektorowych, SQL-owych, NoSQL-owych. Dla użytkownika wygląda to tak: wpisujesz pytanie, dostajesz odpowiedź. Co się dzieje pośrodku? Nie wiesz. Nie widzisz. Nie kontrolujesz.</p>
-                    <p>To jakby zatrudnić pracownika, który prowadzi wszystkie notatki w prywatnym notesie, którego nie możesz przeczytać.</p>
-                    <p>A gdyby tak agent AI trzymał wszystko w zwykłych plikach?</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Filesystem jako baza danych -- o co chodzi?</h4>
-                    <p>Pomysł jest prosty: zamiast zapytać bazę danych "pokaż mi kontekst klienta X", agent otwiera folder <code>/klienci/X/</code> i czyta pliki tam zawarte. Zamiast zapisywać wynik analizy w tabeli SQL, zapisuje go jako <code>analiza-2026-04-11.md</code> w odpowiednim katalogu.</p>
-                    <p><strong>To jak zorganizowana szuflada w biurku.</strong></p>
-                    <p>Każdy rozumie system plików. Nawet osoby nietechniczne używają folderów na co dzień. Widzisz strukturę, widzisz zawartość, możesz wszystko sprawdzić, skopiować, przenieść.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Dlaczego to działa lepiej niż bazy danych</h4>
-                    <p><strong>1. Widzisz co się dzieje.</strong> Gdy agent zapisuje dane w plikach, możesz po prostu otworzyć folder i zobaczyć co "pamięta". Nie potrzebujesz specjalistycznych narzędzi ani dostępu administratora.</p>
-                    <p><strong>2. Debugowanie jest trywialne.</strong> Coś nie działa? Nie musisz grzebać w logach systemowych. Wchodzisz w folder agenta i widzisz co zrobił. Plik po pliku.</p>
-                    <p><strong>3. Wersjonowanie działa natychmiast.</strong> Chcesz wiedzieć co agent robił tydzień temu? Z systemem plików używasz gita. Każda modyfikacja jest zapisana. Możesz cofnąć się w czasie.</p>
-                    <p><strong>4. Dane są twoje.</strong> Pliki możesz skopiować, przenieść na inny komputer. Nie jesteś uzależniony od formatu bazy danych ani od dostawcy.</p>
-                    <p><strong>5. Agenty już znają system plików.</strong> Modele AI są trenowane na kodzie. Doskonale rozumieją komendy jak <code>ls</code>, <code>cat</code>, <code>grep</code>. Nie trzeba ich uczyć nowego języka zapytań.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Jak to wygląda w praktyce</h4>
-                    <p><strong>Przykład: Agent obsługujący zgłoszenia serwisowe</strong></p>
-                    <p>Tradycyjnie: agent zapisuje w bazie "klient X, problem Y, status Z". Widzisz tylko to, co aplikacja ci pokaże.</p>
-                    <p>W podejściu filesystem:</p>
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">/zgłoszenia/
-  /2026-04/
-    /klient-acme-sp-z-o-o/
-      01-wstepna-analiza.md
-      02-korespondencja-z-dostawcą.md
-      03-propozycja-rozwiązania.md
-      status.txt
-      priorytet.txt</pre>
-                    <p>Widzisz dokładnie co agent robił. Możesz przeczytać każdy dokument. Możesz zmienić status ręcznie jeśli trzeba.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Co z tego wynika?</h4>
-                    <p>Paradygmat "filesystem jako baza danych" to nie regres do przeszłości. To świadomy wybór korzyści:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Przejrzystość</strong> -- widzisz co agent robi</li>
-                        <li><strong>Kontrola</strong> -- możesz interweniować na każdym etapie</li>
-                        <li><strong>Przenośność</strong> -- dane są w standardowych formatach</li>
-                        <li><strong>Niezależność</strong> -- nie jesteś uzależniony od dostawcy</li>
-                        <li><strong>Prostota</strong> -- każdy rozumie pliki i foldery</li>
-                    </ul>
-                    <p class="mt-4">W Pragma budujemy naszych agentów właśnie w ten sposób. Nie dlatego, że to modne. Tylko dlatego, że działa. I żebyśmy -- i nasi klienci -- mogli w każdej chwili zajrzeć "pod maskę" i zobaczyć co się dzieje.</p>
-                    <p>Bo technologia powinna być przejrzysta. Zwłaszcza gdy zaczyna podejmować decyzje w naszym imieniu.</p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Artykuł powstał na podstawie prac Muratcana Koylana nad kontekstowymi systemami dla agentów AI.</p>
-                </div>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-en">
-                    <p>Imagine your AI assistant handles client correspondence for months. It remembers every conversation detail, knows regular clients' preferences, understands which projects are "urgent" and which are "whenever". And suddenly -- all that data disappears. Not because someone deleted a file. Just because it's locked in a database you can't access.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Black box instead of a drawer</h4>
-                    <p>Traditional AI systems store agent "memory" in databases -- vector, SQL, NoSQL. From the user's perspective: you type a question, you get an answer. What happens in between? You don't know. You don't see. You don't control.</p>
-                    <p>It's like hiring an employee who keeps all notes in a private notebook you can't read.</p>
-                    <p>What if the AI agent kept everything in regular files instead?</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Filesystem as database -- what's the idea?</h4>
-                    <p>The idea is simple: instead of asking a database "show me client X's context", the agent opens folder <code>/clients/X/</code> and reads the files there. Instead of saving analysis results in a SQL table, it saves them as <code>analysis-2026-04-11.md</code> in the appropriate directory.</p>
-                    <p><strong>It's like an organized desk drawer.</strong></p>
-                    <p>Everyone understands file systems. Even non-technical people use folders daily. You see the structure, you see the content, you can check, copy, move everything.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Why this works better than databases</h4>
-                    <p><strong>1. You see what's happening.</strong> When the agent saves data in files, you can simply open the folder and see what it "remembers". No specialized tools or admin access needed.</p>
-                    <p><strong>2. Debugging is trivial.</strong> Something doesn't work? You don't need to dig through system logs. You enter the agent's folder and see what it did. File by file.</p>
-                    <p><strong>3. Versioning works immediately.</strong> Want to know what the agent did last week? With a file system you use git. Every modification is saved. You can go back in time.</p>
-                    <p><strong>4. The data is yours.</strong> You can copy files, move them to another computer. You're not dependent on database format or vendor.</p>
-                    <p><strong>5. Agents already know file systems.</strong> AI models are trained on code. They perfectly understand commands like <code>ls</code>, <code>cat</code>, <code>grep</code>. No need to teach them a new query language.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What this means in practice</h4>
-                    <p><strong>Example: Agent handling service tickets</strong></p>
-                    <p>Traditionally: agent saves to database "client X, problem Y, status Z". You only see what the app shows you.</p>
-                    <p>In the filesystem approach:</p>
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">/tickets/
-  /2026-04/
-    /client-acme-inc/
-      01-initial-analysis.md
-      02-vendor-correspondence.md
-      03-proposed-solution.md
-      status.txt
-      priority.txt</pre>
-                    <p>You see exactly what the agent did. You can read every document. You can manually change status if needed.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The bottom line</h4>
-                    <p>The "filesystem as database" paradigm isn't a regression to the past. It's a conscious choice of benefits:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Transparency</strong> -- you see what the agent does</li>
-                        <li><strong>Control</strong> -- you can intervene at any stage</li>
-                        <li><strong>Portability</strong> -- data is in standard formats</li>
-                        <li><strong>Independence</strong> -- you're not locked to a vendor</li>
-                        <li><strong>Simplicity</strong> -- everyone understands files and folders</li>
-                    </ul>
-                    <p class="mt-4">At Pragma, we build our agents this way. Not because it's trendy. Just because it works. And so that we -- and our clients -- can always peek "under the hood" and see what's happening.</p>
-                    <p>Because technology should be transparent. Especially when it starts making decisions on our behalf.</p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Article based on Muratcan Koylan's work on context systems for AI agents.</p>
-                </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="bg-white rounded-2xl shadow-md p-8 sm:p-10 mb-8">
-                <div class="flex items-center gap-3 text-sm text-corporate-500 mb-4">
-                    <time datetime="2026-04-11">11 kwietnia 2026</time>
-                    <span class="w-1 h-1 rounded-full bg-corporate-500"></span>
-                    <span>Pragma.AI</span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-bold text-corporate-900 mb-6 leading-tight">
-                    <span class="lang-pl">Czemu Agent AI nie potrzebuje ERP</span>
-                    <span class="lang-en">Why AI Agent doesn't need an ERP</span>
-                </h3>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-pl">
-                    <p>Słyszę to regularnie: "Fajny ten wasz agent AI, ale my najpierw musimy wdrożyć porządny ERP. Mamy taki bałagan w procesach, że bez tego ani rusz." I potem: "A potem CRM. I może jakiś system do workflow. No i trzeba zintegrować. Za 2-3 lata będziemy gotowi na AI."</p>
-                    <p>To jest pułapka. I prowadzi w ślepą uliczkę.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Afryka nie czekała na linie telefoniczne</h4>
-                    <p>W latach 90. wiele krajów afrykańskich miało problem: słaba infrastruktura telefoniczna, rzadka sieć stacjonarna, ogromne koszty budowy linii na bezkresnych terenach.</p>
-                    <p>Rozwiązanie? Nie budowali tego, czego nie mieli.</p>
-                    <p>Zamiast kolejnych dekad rzucania kabli pod ziemią, przeskoczyli bezpośrednio do ery komórkowej. Dziś Kenya czy Nigeria mają lepszą penetrację smartfonów niż niektóre regiony Europy.</p>
-                    <p><strong>To się nazywa "technologiczny skok" (leapfrogging).</strong> Pominięcie etapów, które inni przeszli, i wejście w nową technologię od razu.</p>
-                    <p>A teraz uwaga: dokładnie to samo możesz zrobić w swojej firmie.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Dług technologiczny to nie wyrok</h4>
-                    <p>Współczesna narracja brzmi: "Masz dług technologiczny? Najpierw musisz go spłacić. Wdrożenie ERP to 2-3 lata. Integracja z CRM -- kolejny rok. Dopiero potem możesz myśleć o AI."</p>
-                    <p>To tak jakby powiedzieć Kenijczykowi w 2005 roku: "Najpierw musisz mieć porządną sieć stacjonarną, a dopiero potem możesz myśleć o komórkach."</p>
-                    <p>Absurd.</p>
-                    <p>Agent AI na systemie plików to właśnie ten skok technologiczny. Nie potrzebujesz monolitycznego ERP, żeby zacząć automatyzować procesy.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Co naprawdę potrzebuje Agent AI?</h4>
-                    <p><strong>Tradycyjne podejście ("najpierw ERP"):</strong></p>
-                    <ul class="list-disc pl-6 space-y-1">
-                        <li>Analiza przedwdrożeniowa: 6 miesięcy</li>
-                        <li>Wdrożenie ERP: 12-18 miesięcy</li>
-                        <li>Szkolenia, dostrajanie: 6-12 miesięcy</li>
-                        <li>Integracja z innymi systemami: 6-12 miesięcy</li>
-                        <li><strong>Suma: 3-4 lata zanim cokolwiek działa</strong></li>
-                        <li><strong>Koszt: od kilkuset tysięcy do kilku milionów</strong></li>
-                    </ul>
-
-                    <p class="mt-4"><strong>Podejście z Agentem AI:</strong></p>
-                    <ul class="list-disc pl-6 space-y-1">
-                        <li>Struktura folderów z dokumentami: tydzień</li>
-                        <li>Agent czytający te dokumenty: działa od razu</li>
-                        <li><strong>Suma: miesiąc do pierwszych efektów</strong></li>
-                        <li><strong>Koszt: ułamek tradycyjnego wdrożenia</strong></li>
-                    </ul>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Jak to wygląda w praktyce</h4>
-                    <p><strong>Firma handlowa bez ERP:</strong> Masz Excel z klientami. Faktury w PDF. Zamiast robić projekt wdrożeniowy SAP-a, tworzysz strukturę folderów. Agent czyta, odpowiada na maile, przypomina o płatnościach. Po 4 tygodniach masz działający system, który robi 80% tego, co robiłby ERP za 18 miesięcy.</p>
-
-                    <p><strong>Biuro nieruchomości bez CRM:</strong> Oferty w Wordzie. Zdjęcia w folderach. Agent monitoruje folder <code>/oferty/</code>, czyta opisy, dopasowuje do zapytań z <code>/klienci/</code>, generuje propozycje. Czy to "porządne" w sensie korporacyjnym? Nie. Czy działa od pierwszego tygodnia? Tak.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Pułapka "najpierw uporządkujmy dane"</h4>
-                    <p>Słyszę też: "Ale nasze dane są takie nieuporządkowane, że najpierw musimy to posprzątać."</p>
-                    <p>To kolejna wymówka. Agent AI na systemie plików <strong>pomaga ci uporządkować dane</strong>, zamiast wymagać uporządkowanych danych.</p>
-                    <p>Bo agent może: przeczytać 10 lat korespondencji i wyodrębnić kluczowe informacje, posortować dokumenty po tematach, znaleźć powtarzające się wzorce, zasugerować strukturę folderów.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Wniosek: nie czekaj na idealne warunki</h4>
-                    <p>Afryka nie czekała na idealną infrastrukturę. Wzięła to, co miała i zbudowała na tym nową rzeczywistość.</p>
-                    <p>Ty też nie musisz czekać. Nie musisz mieć "porządnego ERP", "posprzątanych danych", "zintegrowanych systemów". Możesz zacząć od dziś.</p>
-                    <p>Agent AI na systemie plików to nie tymczasowe rozwiązanie. To pełnoprawna architektura, która działa. Dla większości firm -- lepiej niż monolityczne systemy, które połykają budżety i nie dają efektów przez lata.</p>
-                    <p><strong>Nie musisz spłacać długu technologicznego. Możesz go pominąć.</strong></p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">Jeśli zastanawiasz się "czy u nas to zadziała?" -- prawdopodobnie tak. Pytanie brzmi: czy chcesz czekać 3 lata na ERP, czy zacząć za miesiąc?</p>
-                </div>
-                <div class="prose prose-lg max-w-none text-corporate-700 space-y-4 lang-en">
-                    <p>I hear this regularly: "Your AI agent sounds nice, but first we need to implement a proper ERP. Our processes are such a mess, we can't do anything without it." And then: "Then CRM. And maybe a workflow system. And we need to integrate everything. We'll be ready for AI in 2-3 years."</p>
-                    <p>It's a trap. And it leads to a dead end.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Africa didn't wait for landlines</h4>
-                    <p>In the 1990s, many African countries had a problem: poor telephone infrastructure, sparse landline networks, huge costs of building lines across vast territories.</p>
-                    <p>The solution? They didn't build what they didn't have.</p>
-                    <p>Instead of decades of laying cables underground, they leapfrogged directly to the mobile era. Today Kenya or Nigeria have higher smartphone penetration than some European regions.</p>
-                    <p><strong>This is called "technological leapfrogging."</strong> Skipping stages that others went through, and entering new technology immediately.</p>
-                    <p>And here's the thing: you can do exactly the same in your company.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Technical debt is not a sentence</h4>
-                    <p>The modern narrative goes: "You have technical debt? First you need to pay it off. ERP implementation takes 2-3 years. CRM integration -- another year. Only then can you think about AI."</p>
-                    <p>It's like telling a Kenyan in 2005: "First you need a proper landline network, and only then can you think about mobile phones."</p>
-                    <p>Absurd.</p>
-                    <p>An AI agent on a file system is exactly that technological leap. You don't need a monolithic ERP to start automating processes.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What does an AI Agent really need?</h4>
-                    <p><strong>Traditional approach ("ERP first"):</strong></p>
-                    <ul class="list-disc pl-6 space-y-1">
-                        <li>Pre-implementation analysis: 6 months</li>
-                        <li>ERP implementation: 12-18 months</li>
-                        <li>Training, tuning: 6-12 months</li>
-                        <li>Integration with other systems: 6-12 months</li>
-                        <li><strong>Total: 3-4 years before anything works</strong></li>
-                        <li><strong>Cost: from hundreds of thousands to millions</strong></li>
-                    </ul>
-
-                    <p class="mt-4"><strong>AI Agent approach:</strong></p>
-                    <ul class="list-disc pl-6 space-y-1">
-                        <li>Folder structure with documents: 1 week</li>
-                        <li>Agent reading these documents: works immediately</li>
-                        <li><strong>Total: 1 month to first results</strong></li>
-                        <li><strong>Cost: fraction of traditional implementation</strong></li>
-                    </ul>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">What this looks like in practice</h4>
-                    <p><strong>Trading company without ERP:</strong> You have Excel with clients. Invoices in PDF. Instead of doing a SAP implementation project, you create a folder structure. The agent reads, replies to emails, reminds about payments. After 4 weeks you have a working system that does 80% of what an ERP would do in 18 months.</p>
-
-                    <p><strong>Real estate agency without CRM:</strong> Offers in Word. Photos in folders. The agent monitors <code>/offers/</code> folder, reads descriptions, matches with queries from <code>/clients/</code>, generates proposals. Is it "proper" in corporate sense? No. Does it work from week one? Yes.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">The "first let's clean up our data" trap</h4>
-                    <p>I also hear: "But our data is so messy, first we need to clean it up."</p>
-                    <p>That's another excuse. An AI agent on a file system <strong>helps you organize data</strong>, instead of requiring organized data.</p>
-                    <p>Because the agent can: read 10 years of correspondence and extract key information, sort documents by topics, find recurring patterns, suggest folder structure.</p>
-
-                    <h4 class="text-xl font-bold text-corporate-900 mt-8 mb-3">Bottom line: don't wait for perfect conditions</h4>
-                    <p>Africa didn't wait for perfect infrastructure. They took what they had and built a new reality on top of it.</p>
-                    <p>You don't have to wait either. You don't need a "proper ERP", "clean data", "integrated systems". You can start today.</p>
-                    <p>An AI agent on a file system is not a temporary solution. It's a full-fledged architecture that works. For most companies -- better than monolithic systems that swallow budgets and don't deliver results for years.</p>
-                    <p><strong>You don't have to pay off technical debt. You can skip it.</strong></p>
-
-                    <p class="text-sm text-corporate-500 mt-8 pt-4 border-t border-gray-200">If you're wondering "would this work for us?" -- probably yes. The question is: do you want to wait 3 years for an ERP, or start in a month?</p>
-                </div>
-            </article>
-
+            <div class="text-center">
+                <a href="articles.html" class="inline-flex items-center gap-2 bg-corporate-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-corporate-700 transition-all shadow-md hover:shadow-lg group">
+                    <span class="lang-pl">Wszystkie artykuły</span>
+                    <span class="lang-en">All articles</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
         </div>
     </section>
 
