@@ -103,7 +103,7 @@ ERP ma sens, gdy:
 - Regulacje wymagają szczegółowego audytu każdej operacji
 
 Ale większość małych i średnich firm? Nie potrzebuje tego. Potrzebuje:
-- Żeby ktoś/czyś odpisywał na maile
+- Żeby ktoś odpisywał na maile
 - Żeby ktoś pilnował terminów płatności
 - Żeby ktoś przypominał o follow-upach
 - Żeby ktoś organizował dokumenty
