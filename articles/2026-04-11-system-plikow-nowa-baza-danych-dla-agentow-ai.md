@@ -48,7 +48,7 @@ Przy bazach danych? Albo masz drogie rozwiązania do replikacji, albo nie masz h
 
 Pliki możesz skopiować, przenieść na inny komputer, wrzucić na pendrive. Nie jesteś uzależniony od formatu bazy danych ani od dostawcy. Jeśli jutro przestaniesz używać danego agenta -- twoje dane są w standardowym formacie tekstowym, gotowe do użycia gdzie indziej.
 
-### 5. Agenty już znają system plików
+### 5. Agenci już znają system plików
 
 LLM-y (duże modele językowe) są trenowane na ogromnych ilościach kodu. Doskonale rozumieją komendy jak `ls` (pokaż zawartość folderu), `cat` (pokaż zawartość pliku), `grep` (znajdź w plikach). Nie trzeba ich uczyć nowego języka zapytań -- używają narzędzi, które są standardem od 50 lat.
 
@@ -105,7 +105,7 @@ Paradygmat "filesystem jako baza danych" to nie regres do przeszłości. To świ
 - **Niezależność** -- nie jesteś uzależniony od dostawcy bazy danych
 - **Prostota** -- każdy rozumie pliki i foldery
 
-W Pragma budujemy naszych agentów właśnie w ten sposób. Nie dlatego, że to modne. Tylko dlatego, że działa. I żebyśmy -- i nasi klienci -- mogli w każdej chwili zajrzeć "pod maskę" i zobaczyć co się dzieje.
+W Pragma budujemy naszych agentów właśnie w ten sposób. Dlatego, że działa. I żebyśmy -- i nasi klienci -- mogli w każdej chwili zajrzeć "pod maskę" i zobaczyć co się dzieje.
 
 Bo technologia powinna być przejrzysta. Zwłaszcza gdy zaczyna podejmować decyzje w naszym imieniu.
 
